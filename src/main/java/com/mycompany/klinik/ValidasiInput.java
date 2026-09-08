@@ -10,6 +10,9 @@ import java.util.Scanner;
  */
 public class ValidasiInput {
     public static int inputInteger(Scanner scanner, String pesan){
+        
+            System.out.print(pesan);
+        
         while (!scanner.hasNextInt()){
             System.out.println("Input harus berupa angka");
             scanner.nextLine();
