@@ -1,0 +1,6 @@
+model\PasienBPJS.class
+main\Main.class
+model\PasienUmum.class
+model\Pasien.class
+helper\ValidasiInput.class
+service\PasienCRUD.class

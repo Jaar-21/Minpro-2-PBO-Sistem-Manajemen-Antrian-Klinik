@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.klinik;
+package helper;
 import java.util.Scanner;
 /**
  *
@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class ValidasiInput {
     public static int inputInteger(Scanner scanner, String pesan){
         
-            System.out.print(pesan);
+        System.out.print(pesan);
         
         while (!scanner.hasNextInt()){
             System.out.println("Input harus berupa angka");
