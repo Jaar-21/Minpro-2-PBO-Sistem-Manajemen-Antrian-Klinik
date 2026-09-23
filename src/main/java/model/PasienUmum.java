@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+
 /**
  *
  * @author Asus
@@ -17,13 +18,16 @@ public class PasienUmum extends Pasien {
         this.jenisPembayaran = jenisPembayaran;
     }
 
-    public void tampilkanPasienUmum(){
-
-        System.out.printf("%-10d | %-20s | %-6d | %-15s | %-15s\n", idPasien, nama, umur, noTelepon, jenisPembayaran);
+    public String getJenisPembayaran(){
+        return jenisPembayaran;
     }
-    
+
+    public void setJenisPembayaran(String jenisPembayaran){
+        this.jenisPembayaran = jenisPembayaran;
+    }
+
     @Override
-    public void tampilkanInfoPasien(){
-        System.out.printf("%-10d | %-20s | %-6d | %-15s | Pembayaran: %-10s\n", idPasien, nama, umur, noTelepon, jenisPembayaran);
+    public String getInfoTambahan(){
+        return "Pembayaran: " + jenisPembayaran;
     }
 }

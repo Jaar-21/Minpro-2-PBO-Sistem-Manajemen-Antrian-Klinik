@@ -1,6 +1,7 @@
-model\PasienBPJS.class
-main\Main.class
+view\PasienView.class
 model\PasienUmum.class
 model\Pasien.class
 helper\ValidasiInput.class
 service\PasienCRUD.class
+model\PasienBPJS.class
+main\Main.class

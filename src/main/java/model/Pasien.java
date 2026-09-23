@@ -1,13 +1,13 @@
-    /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+
 /**
  *
  * @author Asus
  */
-
 public class Pasien {
     protected final int idPasien;
     protected String nama;
@@ -33,15 +33,29 @@ public class Pasien {
         this.nama = nama;
     }
 
+    public int getUmur(){
+        return umur;
+    }
+
     public void setUmur(int umur){
         this.umur = umur;
+    }
+
+    public String getNoTelepon(){
+        return noTelepon;
     }
 
     public void setNoTelepon(String noTelepon){
         this.noTelepon = noTelepon;
     }
 
-    public void tampilkanInfoPasien(){
-        System.out.printf("%-10d | %-20s | %-6d | %-15s\n",idPasien, nama, umur, noTelepon);
-}
+    public String getInfoTambahan(){
+        return "-";
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%-10d | %-20s | %-6d | %-15s | %s",
+                idPasien, nama, umur, noTelepon, getInfoTambahan());
+    }
 }
