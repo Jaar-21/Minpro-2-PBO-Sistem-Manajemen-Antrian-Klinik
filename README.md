@@ -155,12 +155,12 @@ Kedua subclass menggunakan `super(...)` pada constructor untuk memanfaatkan cons
 ### 2. Polymorphism (Method Overriding)
 Method `getInfoTambahan()` yang dideklarasikan di superclass `Pasien` (mengembalikan `"-"` secara default) di-**override** oleh kedua subclass:
 - `PasienUmum.getInfoTambahan()` → mengembalikan info jenis pembayaran.
+- 
   <img width="349" height="94" alt="image" src="https://github.com/user-attachments/assets/4dd7ba91-99e4-410e-8a0a-b3215810b0e8" />
 
 - `PasienBPJS.getInfoTambahan()` → mengembalikan info nomor BPJS.
   <img width="489" height="93" alt="image" src="https://github.com/user-attachments/assets/5cfd2b4e-9f5d-4fa4-85ec-cf5dee1f82e7" />
 
-Method `toString()` di class `Pasien` juga memanfaatkan `getInfoTambahan()` tadi untuk membentuk baris tabel yang lengkap. Saat `PasienView` melakukan `System.out.println(pasien)` di dalam loop `ArrayList<Pasien>`, Java otomatis menjalankan versi `getInfoTambahan()` sesuai objek aslinya (Pasien Umum atau Pasien BPJS) tanpa perlu pengecekan tipe (`instanceof`) manual — inilah inti dari polymorphism.
 
 ---
 
